@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.dash {
+  text-decoration: none;
+  color: wheat;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 20px 0px;
+  width: calc(100% - 270px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(25% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 230px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  position: fixed; 
+}
+
+.sidebar h2 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.sidebar ul li ul li {
+  margin: 5px 0;
+}
+
+.sidebar ul li ul li a {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+  padding: 8px;
+}
+
+.sidebar ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

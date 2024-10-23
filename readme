@@ -1,0 +1,101 @@
+# Online Receipt Management System
+
+## Overview
+
+The **Online Receipt Management System** is a web-based application designed to automate the creation, management, and delivery of receipts for business transactions. It streamlines the process of recording customer purchases, calculating totals and discounts, and storing transaction records in a database. The system also allows users to view receipt details and send receipts via email to customers.
+
+## Features
+
+- **Receipt Creation**: The system allows users to create detailed receipts for customers, including customer information, product details, quantities, prices, discounts, and the total amount.
+- **Add Multiple Products**: Users can dynamically add multiple products to the receipt form, with automatic calculation of subtotals and discounts.
+- **Invoice Storage**: Receipt and product information is securely stored in a database (MySQL) with unique receipt IDs for each transaction.
+- **Receipt View**: View individual receipt details, including customer data, product breakdown, and transaction total.
+- **Send Receipts via Email**: Send the receipt directly to customers via email.
+
+## screenshot
+
+### Dashboard
+
+![Dashboard](screenshots/receipt_dashboard.png)
+
+### Creating a Receipt
+
+![Creating a Receipt](screenshots/creating_receipt.png)
+
+### Viewing Receipts
+
+![Viewing Receipts](screenshots/viewing_receipt.png)
+
+### Receipt Details
+
+![Receipt Details](screenshots/receipt_details.png)
+
+### Adding Product
+
+![Adding Product](screenshots/adding_product.png)
+
+### Viewing Products
+
+![Viewing Products](screenshots/viewing_products.png)
+
+### Settings
+
+![Settings](screenshots/receipt_settings.png)
+
+## Project Structure
+
+The project is organized into several key files and directories:
+
+- `index.php`: The main dashboard page.
+- `create_invoice.php`: Page for creating new receipts.
+- `view_invoices.php`: Displays a list of all created receipts.
+- `view_invoice_details.php`: Shows detailed information for a specific receipt.
+- `includes/db.php`: Contains the database connection logic.
+- `scripts.js`: Contains JavaScript code for handling UI interaction, dynamic product addition, and calculations.
+- `styles.css`: The main stylesheet for the project.
+
+## Database Setup
+
+Import the `database/invoice_management_system.sql` file for Database setup
+
+## Setup Instructions
+
+### Requirements
+
+- PHP (>= 7.4)
+- MySQL database
+- A web server (e.g., Apache)
+- Internet browser for UI
+
+### Installation
+
+1. Clone this repository or download the source code to your local server.
+2. Import the provided database schema (`invoice_management.sql`) into your MySQL database.
+3. Update `includes/db.php` with your database credentials.
+4. Start your local server (e.g., XAMPP, WAMP) and navigate to the project directory.
+5. Access the system through your browser (e.g., `http://localhost/project/`).
+
+### Usage
+
+- **Creating Receipts**: Navigate to the "Create Receipt" page and fill out the form with customer details and product information. Add multiple products if needed, and click **Send** to store the receipt and send it via email.
+- **Viewing Receipts**: Go to the "View Receipts" page to see a list of all receipts. Click on a receipt to view its details.
+- **Sending Receipts**: From the receipt details page, use the **Send** button to send the receipt via email to the customer.
+
+## Known Issues
+
+- receipt sent to the mail are in text format
+- using 'invoice' instead of 'receipt'
+
+## Future Enhancements
+
+- Ability to generate PDF versions of receipts for download.
+- Adding customer management features for frequent customers.
+- Implementation of more advanced reporting and analytics for receipt and sales data.
+- change all 'invoice' to 'receipt'
+
+## License
+
+![License] `https://img.shields.io/badge/license-MIT-brightgreen.svg`
+.
+
+---
