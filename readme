@@ -93,6 +93,10 @@ Import the `database/invoice_management_system.sql` file for Database setup
 - Implementation of more advanced reporting and analytics for receipt and sales data.
 - change all 'invoice' to 'receipt'
 
+## Contact Information
+
+For inquiries about the full project files, please contact me at: [adenugadavid435@gmail.com].
+
 ## License
 
 ![License] `https://img.shields.io/badge/license-MIT-brightgreen.svg`
