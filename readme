@@ -56,7 +56,7 @@ The project is organized into several key files and directories:
 
 ## Database Setup
 
-- **check full project**
+- Import the `database/invoice_management_system.sql` file for Database setup
 
 ## Setup Instructions
 
@@ -69,7 +69,12 @@ The project is organized into several key files and directories:
 
 ### Installation
 
-- **check full project**
+1. Clone this repository or download the source code to your local server.
+2. Import the provided database schema (`invoice_management.sql`) into your MySQL database.
+3. Update `includes/db.php` with your database credentials.
+4. Start your local server (e.g., XAMPP, WAMP) and navigate to the project directory.
+5. Access the system through your browser (e.g., `http://localhost/project/`).
+
 
 ### Usage
 
